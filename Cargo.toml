@@ -1,8 +1,8 @@
 [package]
-name = "comcli-rs"
+name = "comrust"
 version = "0.0.1"
 edition = "2021"
-repository = "https://github.com/commune-ai/comcli-rs"
+repository = "https://github.com/commune-ai/comrust"
 authors = ["rust-exdev"]
 
 [package.metadata.wix]
