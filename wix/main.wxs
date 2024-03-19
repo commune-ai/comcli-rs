@@ -60,7 +60,7 @@
 
     <Product
         Id='*'
-        Name='comcli-rs'
+        Name='c'
         UpgradeCode='E47FC116-93AA-4192-8E2C-AD20A01347D9'
         Manufacturer='rust-exdev'
         Language='1033'
@@ -82,11 +82,11 @@
             DowngradeErrorMessage='A newer version of [ProductName] is already installed. Setup will now exit.'/>
 
         <Media Id='1' Cabinet='media1.cab' EmbedCab='yes' DiskPrompt='CD-ROM #1'/>
-        <Property Id='DiskPrompt' Value='comcli-rs Installation'/>
+        <Property Id='DiskPrompt' Value='c Installation'/>
 
         <Directory Id='TARGETDIR' Name='SourceDir'>
             <Directory Id='$(var.PlatformProgramFilesFolder)' Name='PFiles'>
-                <Directory Id='APPLICATIONFOLDER' Name='comcli-rs'>
+                <Directory Id='APPLICATIONFOLDER' Name='c'>
                     
                     <!--
                       Enabling the license sidecar file in the installer is a four step process:
@@ -122,9 +122,9 @@
                         <Component Id='binary0' Guid='*'>
                             <File
                                 Id='exe0'
-                                Name='comcli-rs.exe'
+                                Name='c.exe'
                                 DiskId='1'
-                                Source='$(var.CargoTargetBinDir)\comcli-rs.exe'
+                                Source='$(var.CargoTargetBinDir)\c.exe'
                                 KeyPath='yes'/>
                         </Component>
                     </Directory>
@@ -172,7 +172,7 @@
         <!--<Icon Id='ProductICO' SourceFile='wix\Product.ico'/>-->
         <!--<Property Id='ARPPRODUCTICON' Value='ProductICO' />-->
 
-        <Property Id='ARPHELPLINK' Value='https://github.com/commune-ai/comcli-rs'/>
+        <Property Id='ARPHELPLINK' Value='https://github.com/commune-ai/comrust'/>
         
         <UI>
             <UIRef Id='WixUI_FeatureTree'/>
